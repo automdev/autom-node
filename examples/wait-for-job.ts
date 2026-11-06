@@ -1,4 +1,4 @@
-import { AutomClient } from "@autom/sdk";
+import { AutomClient } from "@automdev/sdk";
 
 const client = new AutomClient({ apiKey: process.env.AUTOM_API_KEY });
 

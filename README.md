@@ -13,7 +13,7 @@ The SDK exposes **23 typed methods**, one per documented endpoint, plus a generi
 ## Installation
 
 ```sh
-npm install @autom/sdk
+npm install @automdev/sdk
 ```
 
 The SDK works with TypeScript and JavaScript (ES modules). The examples below use TypeScript; JavaScript users can use the same API by omitting TypeScript-only syntax.
@@ -25,7 +25,7 @@ The SDK works with TypeScript and JavaScript (ES modules). The examples below us
 ## Quick start
 
 ```ts
-import { AutomClient } from "@autom/sdk";
+import { AutomClient } from "@automdev/sdk";
 
 const client = new AutomClient({ apiKey: process.env.AUTOM_API_KEY });
 
@@ -78,7 +78,7 @@ Both keep the buffered `rawResponse` (status, headers, content type, body bytes)
 ## Errors
 
 ```ts
-import { AutomApiError } from "@autom/sdk";
+import { AutomApiError } from "@automdev/sdk";
 
 try {
   await client.googleSearch({ query: "web scraping api" });
@@ -153,7 +153,7 @@ await client.googleSearch(
 ## Advanced: custom Fetch transport
 
 ```ts
-import { AutomClient, type AutomFetch } from "@autom/sdk";
+import { AutomClient, type AutomFetch } from "@automdev/sdk";
 
 const loggingFetch: AutomFetch = async (input, init) => {
   const response = await fetch(input, init);

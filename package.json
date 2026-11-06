@@ -1,5 +1,5 @@
 {
-  "name": "@autom/sdk",
+  "name": "@automdev/sdk",
   "version": "0.1.0",
   "description": "Official Node.js and TypeScript SDK for the Autom SERP API.",
   "type": "module",
